@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ranaji Astrology</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon-192.png">
+  <meta name="theme-color" content="#1a73e8">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="/icon-72.png" class="logo" alt="Ranaji">
+      <div>
+        <h1>Ranaji Astrology</h1>
+        <p class="subtitle">Daily Horoscope, Kundli, Tarot & More</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <a class="card" href="kundli.html">Kundli</a>
+      <a class="card" href="horoscope.html">Daily Horoscope</a>
+      <a class="card" href="matching.html">Matchmaking</a>
+      <a class="card" href="tarot.html">Tarot</a>
+      <a class="card" href="numerology.html">Numerology</a>
+      <a class="card" href="remedies.html">Remedies</a>
+      <a class="card" href="panchang.html">Panchang</a>
+      <a class="card" href="about.html">About</a>
+      <a class="card" href="camera.html">Camera Prediction</a>
+      <a class="card" href="reels.html">Reels</a>
+    </section>
+  </main>
+
+  <footer class="footer">© Ranaji Astrology</footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(()=>console.log('SW registered'))
+    .catch(e=>console.error('SW failed',e));
+}
+</script>
+</body>
+</html>

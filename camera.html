@@ -1,0 +1,15 @@
+
+<div class='page'><a class='back' href='/'>← Home</a><h1>Camera Prediction</h1>
+<p>Take a photo and get a fun prediction (demo).</p>
+<button onclick="startCamera()">Open Camera</button>
+<video id='v' autoplay style='width:100%;max-width:420px;margin-top:12px;border-radius:10px'></video>
+<script>
+async function startCamera(){
+  try{
+    const s = await navigator.mediaDevices.getUserMedia({video:true});
+    document.getElementById('v').srcObject = s;
+  }catch(e){
+    alert('Camera access denied or not available.');
+  }
+}
+</script></div>
